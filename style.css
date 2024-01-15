@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-color-gray {
+  color: #3a3a3a;
+}
+
+header {
+  margin-top: 20px;
+}
+
+header h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+header nav {
+  max-width: 1100px;
+  padding: 20px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 17px;
+  color: #3a3a3a;
+  transition: all 0.5s;
+}
+
+header nav ul li a:hover {
+  color: #e02c6d;
+}
+
+/* hero section style start */
+.hero-section {
+  margin-top: 50px;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  align-items: center;
+}
+
+.hero-title,
+.hero-image {
+  width: 50%;
+}
+
+.hero-title h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.hero-title p {
+  padding: 10px 0;
+}
+
+.hero-title button {
+  padding: 10px 30px;
+  background-color: #e02c6d;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-title button:hover {
+  background-color: black;
+}
+
+.hero-image {
+  background-image: url("images/Circle design.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* responsive design start */
+
+/* mobile design start */
+
+@media screen and (max-width: 576px) {
+  .hero-container,
+  header nav {
+    flex-direction: column;
+  }
+
+  .hero-image,
+  .hero-title {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  header nav ul li a {
+    margin-left: 15px;
+  }
+
+  .hero-image img {
+    max-width: 350px;
+  }
+}
+
+/* tablet design start */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header nav {
+    flex-direction: column;
+  }
+}
