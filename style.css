@@ -123,9 +123,113 @@ header nav ul li a:hover {
   max-width: var(--main-width);
   margin: 30px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid rgb(207, 201, 201);
   padding-bottom: 30px;
+}
+
+/* ----------------pupolre section style start------------------ */
+
+.pupoler-section {
+  margin-top: 30px;
+  max-width: var(--main-width);
+  margin: 70px auto;
+}
+
+.pupoler-section h2 {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pupoler-section > p {
+  text-align: end;
+  margin-top: 20px;
+}
+
+.pupoler-section > p > a {
+  text-decoration: none;
+  color: #e02c6d;
+}
+
+.pupoler-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.pupoler-card {
+  cursor: pointer;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+}
+
+.pupoler-card img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.pupoler-card h3 {
+  color: #3a3a3a;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.pupoler-card p {
+  padding: 0 20px;
+}
+
+/*-------- featured section start -------------*/
+
+.featured-section {
+  max-width: var(--main-width);
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+.featured-content {
+  padding: 10px 30px;
+}
+
+.featured-content h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #0a0826;
+}
+
+.featured-content p {
+  padding: 10px 0;
+  line-height: 26px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+
+.featured-content button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e02c6d;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.featured-content button:hover {
+  background-color: black;
+}
+
+.featured-content button i {
+  margin-left: 20px;
 }
 
 /* responsive design start */
@@ -136,6 +240,12 @@ header nav ul li a:hover {
   .hero-container,
   header nav {
     flex-direction: column;
+  }
+
+  .pupoler-container {
+    width: 95%;
+    grid-template-columns: 1fr;
+    margin: auto;
   }
 
   .hero-image,
@@ -158,5 +268,11 @@ header nav ul li a:hover {
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header nav {
     flex-direction: column;
+  }
+
+  .sponsor-section,
+  .pupoler-container {
+    width: 95%;
+    margin: auto;
   }
 }
