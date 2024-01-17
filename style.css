@@ -195,10 +195,6 @@ header nav ul li a:hover {
   gap: 20px;
 }
 
-.featured-img img {
-  width: 100%;
-}
-
 .featured-content {
   padding: 10px 30px;
 }
@@ -244,6 +240,7 @@ footer {
   color: #fff;
   line-height: 36px;
   text-align: center;
+  margin-top: 50px;
 }
 
 footer a {
@@ -267,6 +264,10 @@ footer a {
     width: 95%;
     grid-template-columns: 1fr;
     margin: auto;
+  }
+
+  .featured-img img {
+    width: 100%;
   }
 
   .featured-img,
@@ -297,6 +298,9 @@ footer a {
     flex-direction: column;
   }
 
+  .featured-img img {
+    width: 100%;
+  }
   .featured-img,
   .sponsor-section,
   .pupoler-container {
