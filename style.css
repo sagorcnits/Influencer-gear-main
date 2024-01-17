@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --main-width: 1100px;
+}
+
 .text-color-gray {
   color: #3a3a3a;
 }
@@ -21,7 +25,7 @@ header h1 {
 }
 
 header nav {
-  max-width: 1100px;
+  max-width: var(--main-width);
   padding: 20px 0;
   margin: 0 auto;
   display: flex;
@@ -55,12 +59,14 @@ header nav ul li a:hover {
 }
 
 .hero-container {
-  max-width: 1100px;
+  max-width: var(--main-width);
   margin: 0 auto;
   display: flex;
   flex: 1;
   gap: 10px;
   align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(207, 201, 201);
 }
 
 .hero-title,
@@ -109,6 +115,17 @@ header nav ul li a:hover {
   display: block;
   max-width: 400px;
   margin: 0 auto;
+}
+
+/* sponsor section start */
+
+.sponsor-section {
+  max-width: var(--main-width);
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(207, 201, 201);
+  padding-bottom: 30px;
 }
 
 /* responsive design start */
