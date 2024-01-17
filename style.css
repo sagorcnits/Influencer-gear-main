@@ -195,6 +195,10 @@ header nav ul li a:hover {
   gap: 20px;
 }
 
+.featured-img img {
+  width: 100%;
+}
+
 .featured-content {
   padding: 10px 30px;
 }
@@ -232,11 +236,28 @@ header nav ul li a:hover {
   margin-left: 20px;
 }
 
+/* -----------------footer section start-------------- */
+
+footer {
+  padding: 50px 0;
+  background-color: #0a0826;
+  color: #fff;
+  line-height: 36px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin-left: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+}
 /* responsive design start */
 
 /* mobile design start */
 
 @media screen and (max-width: 576px) {
+  .featured-section,
   .hero-container,
   header nav {
     flex-direction: column;
@@ -248,6 +269,7 @@ header nav ul li a:hover {
     margin: auto;
   }
 
+  .featured-img,
   .hero-image,
   .hero-title {
     width: 95%;
@@ -261,15 +283,21 @@ header nav ul li a:hover {
   .hero-image img {
     max-width: 350px;
   }
+
+  .featured-content h1 {
+    font-size: 20px;
+  }
 }
 
 /* tablet design start */
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
+  .featured-section,
   header nav {
     flex-direction: column;
   }
 
+  .featured-img,
   .sponsor-section,
   .pupoler-container {
     width: 95%;
